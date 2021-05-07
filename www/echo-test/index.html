@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gabe Odachowski">
+    <title>Missile</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+    <!------------------------>
+    <!--                    -->
+    <!-- Bootstrap core CSS -->
+    <!--                    -->
+    <!------------------------>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!------------------->
+    <!--               -->
+    <!-- Custom styles -->
+    <!--               -->
+    <!------------------->
+    <link href="echo-test.css" rel="stylesheet">
+  </head>
+  <body>
+    <!------------>
+    <!--        -->
+    <!-- Navbar -->
+    <!--        -->
+    <!------------>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Missile</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+    
+    <!------------->
+    <!--         -->
+    <!-- Content -->
+    <!--         -->
+    <!------------->
+    <div class="container-fluid">
+      <div class="row">
+        <!------------->
+        <!--         -->
+        <!-- Sidebar -->
+        <!--         -->
+        <!------------->
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <a href="/" class="d-flex align-items-center justify-content-center text-white text-decoration-none">
+                <img src="../assets/logos/missile/missile-logo-light.svg" width="80" height="80">
+                <!-- <span class="fs-3">Missile</span> -->
+              </a>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link"href="../index.html">
+                  <span data-feather="home"></span>
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  New
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Vendor Sync
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <span data-feather="file"></span>
+                  Echo Tests
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!---------->
+        <!--      -->
+        <!-- Main -->
+        <!--      -->
+        <!---------->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Echo Test</h1>
+          </div>
+
+          <div class="mb-3">
+            <label for="input" class="form-label">Message to send</label>
+            <input type="text" id="input" class="form-control" placeholder="Hello World">
+          </div>
+
+          <button type="button" id="sendMsg" class="btn btn-primary" onclick="sendInput()">Send Message</button>
+
+          <p id="connection"></p>
+
+          <label for="outputGroup" class="form-label">Message received</label>
+          <ul class="list-group" id="outputGroup">
+            <li class="list-group-item" id="outputP"></li>
+          </ul>
+        </main>
+      </div>
+    </div>
+
+    <!------------->
+    <!--         -->
+    <!-- Scripts -->
+    <!--         -->
+    <!------------->
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="echo-test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gabe Odachowski">
+    <title>Grad Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+    <!------------------------>
+    <!--                    -->
+    <!-- Bootstrap core CSS -->
+    <!--                    -->
+    <!------------------------>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!------------------->
+    <!--               -->
+    <!-- Custom styles -->
+    <!--               -->
+    <!------------------->
+    <link href="echo-test.css" rel="stylesheet">
+    <link href="assets/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <!------------>
+    <!--        -->
+    <!-- Navbar -->
+    <!--        -->
+    <!------------>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Grad Reader</a>
+    </header>
+    
+    <!------------->
+    <!--         -->
+    <!-- Content -->
+    <!--         -->
+    <!------------->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <!---------->
+        <!--      -->
+        <!-- Main -->
+        <!--      -->
+        <!---------->
+        <main class="col-md-10 col-lg-8">
+          <div class="d-flex flex-wrap flex-md-nowrap pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Grad Reader</h1>
+          </div>
+
+          <div class="container-fluid">
+            <!-- row 1 -->
+            <div class="row justify-content-center mb-3">
+              <div id="adminBox" class="d-flex flex-column bg-secondary text-white col-5 align-items-center">
+                <h1 class="border-bottom mb-3">Admin</h1>
+                <a href="/admin"><button type="button" class="row btn btn-outline-light btn-lg mb-4">Dashboard</button></a>
+              </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="row justify-content-center">
+              <div id="q1Box" class="d-flex flex-column bg-success text-white col-5 align-items-center mx-auto">
+                <h1 class="border-bottom mb-3">Queue 1</h1>
+                <a href="/scanner?qNum=1"><button type="button" class="row btn btn-outline-light btn-lg mb-3">Scanner</button></a>
+                <a href="/dashboard?qNum=1"><button type="button" class="row btn btn-outline-light btn-lg mb-3">Dashboard</button></a>
+                <a href="/screen?qNum=1"><button type="button" class="row btn btn-outline-light btn-lg mb-4">Screen</button></a>
+              </div>
+
+              <div id="q2Box" class="d-flex flex-column bg-danger text-white col-5 align-items-center mx-auto">
+                <h1 class="border-bottom mb-3">Queue 2</h1>
+                <a href="/scanner?qNum=2"><button type="button" class="row btn btn-outline-light btn-lg mb-3">Scanner</button></a>
+                <a href="/dashboard?qNum=2"><button type="button" class="row btn btn-outline-light btn-lg mb-3">Dashboard</button></a>
+                <a href="/screen?qNum=2"><button type="button" class="row btn btn-outline-light btn-lg mb-4">Screen</button></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="mb-3">
+            <label for="input" class="form-label">Message to send</label>
+            <input type="text" id="input" class="form-control" placeholder="Hello World">
+          </div>
+
+          <button type="button" id="sendMsg" class="btn btn-primary" onclick="sendInput()">Send Message</button>
+
+          <p id="connection"></p>
+
+          <label for="outputGroup" class="form-label">Message received</label>
+          <ul class="list-group" id="outputGroup">
+            <li class="list-group-item" id="outputP"></li>
+          </ul> -->
+        </main>
+      </div>
+    </div>
+
+    <!------------->
+    <!--         -->
+    <!-- Scripts -->
+    <!--         -->
+    <!------------->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
