@@ -1,0 +1,4 @@
+{"cmd":"addToQ", "qNum":0, "mainText":"hello", "subText":"world"}
+{"cmd":"showText", "qNum":0, "mainText":"hello", "subText":"world"}
+{"cmd":"showFromQ", "qNum":1, "qId":0}
+{"cmd":"getQ", "qNum":1}
